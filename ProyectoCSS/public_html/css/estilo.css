@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+p{
+    font-family: Tahoma, Geneva, sans-serif;
+    color: darkred;
+    font-size: 18px
+}
+
+ h1{
+    text-align: center;
+    color: #00F;
+}
+
+body{
+    background-color: aquamarine;
+}

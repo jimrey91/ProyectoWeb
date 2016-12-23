@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /*  Conflicto de herencia - Orden de selectores
+                
+                Selector etiqueta = 1 pto
+                Selector de clase = 10 ptos
+                Selector de ID = 100 ptos
+                Selector Inline = 1000 ptos
+            
+            
+            */
+            
+            strong{
+                color: blue;
+            }
+            
+            .strong{
+                color: green;
+            }
+            
+            #strongid{
+                color: yellow;
+            }
+            
+            
+        </style>
+    
+    </head>
+    <body>
+        <p>Esto es un texto <strong class="strong" style="color: red">claro</strong></p>
+    </body>
+</html>
