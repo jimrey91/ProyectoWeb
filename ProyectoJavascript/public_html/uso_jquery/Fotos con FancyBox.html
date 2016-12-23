@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fotos con FancyBox</title>
+<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css">
+
+<script src="../jquery/jquery-3.1.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.js"></script>
+<script src="../jquery/jquery.easing.1.3.js"></script>
+<script>
+$(document).ready(function() {
+	$("#galeria a").fancybox({
+           overlayColor: "#797e79",
+           overlayOpacity: .6,
+           transitionIn: "elastic",
+           transitionOut: "elastic",
+           easingIn: "easeInSine",
+           titlePosition: "Outside",
+           cyclic: true,
+           speedIn: 1000
+        });
+
+});
+</script>
+</head>
+<body>
+
+<div class="cabecera">
+<img src="../img/pildoras_1.png">
+	<p class="logo">Píldoras Informáticas </p>
+</div>
+
+
+<div class="contenido">
+	<div class="principal">
+		<h1>Fotos</h1>
+		<div id="galeria">
+		<a href="../img/paisaje1.JPG" rel="gallery" title="Bonito paisaje nocturno"><img src="../img/paisaje1.JPG" width="70" height="70" alt="Paisaje nocturno"></a>
+		<a href="../img/2.jpg" rel="gallery" title="Vacas pasando la vida"><img src="../img/2.jpg" width="70" height="70" alt="vacas"></a>
+		<a href="../img/paisaje2.jpg" rel="gallery" title="Palemeras al atradecer"><img src="../img/paisaje2.jpg" width="70" height="70" alt="Palmeras"></a>
+		<a href="../img/paisaje3.jpg" rel="gallery" title="Montañas"><img src="../img/paisaje3.jpg" width="70" height="70" alt="Montañas"></a>
+		<a href="../img/3.png" rel="gallery" title="Pico costero"><img src="../img/3.png" width="70" height="70" alt="Pico"></a>
+		<a href="../img/paisaje4.jpg" rel="gallery" title="Atradecer"><img src="../img/paisaje4.jpg" width="70" height="70" alt="atardecer"></a></div>
+	</div>
+</div>
+
+
+</body>
+</html>

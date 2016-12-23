@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+ /*           var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
+                        "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+            
+            var contador = 0;
+            
+            while (contador < meses.length) {
+                document.write(meses[contador] + "<br/>");
+                contador++;
+
+                
+    }*/
+            var nombre = prompt("Introduce tu nombre", "");
+            
+            while (!isNaN(nombre)) {
+                nombre = prompt("Ingrese un nombre valido", "");
+            }
+            
+            var edad = prompt("Introduce tu edad", "");
+            
+            while (edad <= 0 || edad >105 || isNaN(edad)) {
+                  edad = prompt("Ingrese una edad valida", "");  
+}
+            var poblacion = prompt("Introduce poblacion", "");
+            
+            while (!isNaN(poblacion)) {
+                poblacion = prompt("Ingrese un poblacion valido", "");
+            }
+            
+            
+        </script>
+        <style>
+            #contenedor{
+                width: 25%;
+                background-color: #ffc;
+                margin: auto;
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="contenedor">
+            <p>Nombre:
+            <script>document.write(nombre);</script>
+            </p>
+            <p>Edad:
+            <script>document.write(edad);</script>
+            </p>
+            <p>Poblacion:
+            <script>document.write(poblacion);</script>
+            </p>
+            
+        </div>
+    </body>
+</html>

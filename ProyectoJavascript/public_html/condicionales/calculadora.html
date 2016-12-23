@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            var num1 = prompt("Introduce el primer nº");
+            var num2 = prompt("Introduce el segundo nº");
+            
+            if(!isNaN(num1) && !isNaN(num2)){
+                
+            
+            var operacion = prompt("Que operacion desea realizar? suma/resta/multiplicacion/division");
+            if (operacion == "suma") {
+                alert(parseInt(num1) + parseInt(num2));
+            }else if(operacion == "resta"){
+                alert(parseInt(num1) - parseInt(num2));
+            }else if(operacion == "multiplicacion" || "multiplicación"){
+                alert(parseInt(num1) * parseInt(num2));
+            }else if(operacion == "division" || "división"){
+                alert(parseInt(num1) / parseInt(num2));
+            }else{
+                alert("Operacion no contemplada");
+            }
+        }else{
+            if(typeof(num1) == "String" || typeof(num2) == "String"){
+                alert("Has introducido valores numericos");
+            }else{
+                alert("Ha ocurrido un error no identificado");
+            }
+            alert("No se puede operar numeros");
+        }
+        </script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>
